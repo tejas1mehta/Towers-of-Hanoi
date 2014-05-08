@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="hanoi.css" type="text/css">
+
+  <script src="underscore.js"> </script>
+  <script src="jquery-2.1.1.js"> </script>
+  <script src="hanoi.js"> </script>
+  <script src="hanoiUI.js"> </script>
+
+</head>
+<body>
+  <div id="hgame">
+
+
+    <script>
+    // $disk1 = $('<div id="1" class="disk"> </div>');
+    // $disk2 = $('<div id="2" class="disk"> </div>');
+    // $disk3 = $('<div id="3" class="disk"> </div>');
+
+    this.game = new Hanoi.Game();
+
+    $game = $("#hgame");
+    for(var i = 0 ; i < 3; i++){
+      var $col = $("<div class='col'></div>");
+      $col.attr('data-col', i);
+      $game.append($col);
+      for( var j = 2; j >= 0; j--){
+        var $cell = $("<div class='grid'></div>");
+        $cell.attr('data-col', i);
+        $cell.attr("data-row", j);
+        $col.append($cell);
+        //CELLS
+      }
+    }
+
+    this.game.render();
+    this.game.setEvents();
+    //
+    //
+    // for(var i = 0 ; i<3; i++){
+    //   for( var j = 0; j<3; j++){
+    //     if (game.towers[i][j]){
+    //
+    //     }
+    //   }
+    // }
+
+
+    </script>
+  </div>
+</body>
+</html>

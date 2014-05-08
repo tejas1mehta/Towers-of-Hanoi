@@ -1,0 +1,43 @@
+div#hgame {
+  height: 150px;
+  width: 600px;
+}
+
+.disk1 {
+  height: 50px;
+  width: 120px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+.disk2 {
+  height: 50px;
+  width: 150px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+.disk3 {
+  height: 50px;
+  width: 180px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+.grid {
+  height: 50px;
+  width: 200px;
+/*  float: left;*/
+  outline: black solid 2px;
+}
+
+.col {
+  height: 150px;
+  width: 200px;
+  float:left;
+}
+
+.highlight {
+  opacity: 0.5;
+  background-color: yellow;
+}
