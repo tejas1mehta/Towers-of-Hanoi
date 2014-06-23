@@ -28,15 +28,12 @@
       }
       else {
         that.to = parseInt($(this).attr("data-col"));
-        //debugger;
-        that.move(that.from, that.to)
+        if (!that.move(that.from, that.to)){ alert("Invalid Move!")}
         $(that.from).removeClass("highlight");
         that.to = null;
         that.from = null;
         that.render();
-        if(that.isWon()) {
-          alert("You won!");
-        }
+        if(that.isWon()) { alert("You won!"); }
       }
     });
   }
